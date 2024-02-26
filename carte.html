@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+  <script>
+   L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+  </script>
+  <style>
+   html, body {width: 100%;height: 100%;margin: 0;padding: 0;}
+  </style>
+  <style>
+   #map {position:absolute;top:0;bottom:0;right:0;left:0;}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js">
+  </script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js">
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css" rel="stylesheet"/>
+  <meta content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+  <style>
+   #map_df5683ef422be0048601b0ad41bfd458 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+  </style>
+  <link href="icon.png" rel="icon"/>
+  <title>
+   Carte
+  </title>
+ </head>
+ <body>
+  <div class="folium-map" id="map_df5683ef422be0048601b0ad41bfd458">
+  </div>
+ </body>
+ <script>
+  var map_df5683ef422be0048601b0ad41bfd458 = L.map(
+                "map_df5683ef422be0048601b0ad41bfd458",
+                {
+                    center: [47.472, -0.548],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_90b5710ccc5571859cbad190a442a410 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            var marker_b488981a38979c6ff7e51ca227dd46c5 = L.marker(
+                [47.47058068509829, -0.5588211781069718],
+                {}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            var icon_602465aa3ebb5c1450c571c9ac7f04a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star\n", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b488981a38979c6ff7e51ca227dd46c5.setIcon(icon_602465aa3ebb5c1450c571c9ac7f04a1);
+        
+    
+            marker_b488981a38979c6ff7e51ca227dd46c5.bindTooltip(
+                `<div>
+                     Chateau d Angers
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d243960eaf409ed0f31f0a6ba117287a = L.marker(
+                [47.46923951451826, -0.5571464039375051],
+                {}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            var icon_46c6859476dfe895182eb6fcd9673dcf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book\n", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d243960eaf409ed0f31f0a6ba117287a.setIcon(icon_46c6859476dfe895182eb6fcd9673dcf);
+        
+    
+            marker_d243960eaf409ed0f31f0a6ba117287a.bindTooltip(
+                `<div>
+                     Bibliotheque Toussaint
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b8284dcd79008ffb1ce8e715f52a3459 = L.marker(
+                [47.4710199493501, -0.5556103465697837],
+                {}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            var icon_24b6362b89f4fe0f811fe3eb911a3630 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "toilet\n", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b8284dcd79008ffb1ce8e715f52a3459.setIcon(icon_24b6362b89f4fe0f811fe3eb911a3630);
+        
+    
+            marker_b8284dcd79008ffb1ce8e715f52a3459.bindTooltip(
+                `<div>
+                     Toilettes Publiques
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7dad35c13b305125f11bd30137039c83 = L.marker(
+                [47.46880927210325, -0.5536689209805123],
+                {}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            var icon_4138b64fc5c69056645e0ab8188910ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "toilet\n", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7dad35c13b305125f11bd30137039c83.setIcon(icon_4138b64fc5c69056645e0ab8188910ad);
+        
+    
+            marker_7dad35c13b305125f11bd30137039c83.bindTooltip(
+                `<div>
+                     Toilettes Publiques
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ead757c78af3e70658a359c48e7dc949 = L.marker(
+                [47.47292726835424, -0.5568318165792219],
+                {}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            var icon_553a4f4d6d28f61cb2df8f088a8a02dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "toilet\n", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ead757c78af3e70658a359c48e7dc949.setIcon(icon_553a4f4d6d28f61cb2df8f088a8a02dd);
+        
+    
+            marker_ead757c78af3e70658a359c48e7dc949.bindTooltip(
+                `<div>
+                     Toilettes Publiques
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a05324b0103e0783afe93518d368106 = L.marker(
+                [47.47481422935764, -0.5670703845470881],
+                {}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            var icon_29edd94e4d3a396c09a6b4aca258f42b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "school\n", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4a05324b0103e0783afe93518d368106.setIcon(icon_29edd94e4d3a396c09a6b4aca258f42b);
+        
+    
+            marker_4a05324b0103e0783afe93518d368106.bindTooltip(
+                `<div>
+                     lycee Auguste et Jean Renoir
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf1022ee13613f0f7d1341d9de61533c = L.marker(
+                [47.472221354199554, -0.5536198036751694],
+                {}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            var icon_ead66a201c1116b38b552dadfb18c473 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "film\n", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cf1022ee13613f0f7d1341d9de61533c.setIcon(icon_ead66a201c1116b38b552dadfb18c473);
+        
+    
+            marker_cf1022ee13613f0f7d1341d9de61533c.bindTooltip(
+                `<div>
+                     CINEMA LES 400 COUPS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de498fbd0b7746f0a3d3676de3172cd7 = L.marker(
+                [47.473236180821964, -0.5566824740649667],
+                {}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            var icon_0206624d8003992c24ca1c5c2d612993 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree\n", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_de498fbd0b7746f0a3d3676de3172cd7.setIcon(icon_0206624d8003992c24ca1c5c2d612993);
+        
+    
+            marker_de498fbd0b7746f0a3d3676de3172cd7.bindTooltip(
+                `<div>
+                     Esplanade coeur de Maine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4a1e59cada94745cae1294570a377d7 = L.marker(
+                [47.469368480739945, -0.5515754038755993],
+                {}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            var icon_92f7659f4dd932d3b4c8a4dc09729fe6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "school\n", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f4a1e59cada94745cae1294570a377d7.setIcon(icon_92f7659f4dd932d3b4c8a4dc09729fe6);
+        
+    
+            marker_f4a1e59cada94745cae1294570a377d7.bindTooltip(
+                `<div>
+                     Lycee prive Saint-Benoit
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c343e22c60a131ee1c83d735c9f94b8 = L.marker(
+                [47.47268497769594, -0.5565179849447621],
+                {}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            var icon_eb5d783e65d13b47ae9c7e868f42558e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "school\n", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7c343e22c60a131ee1c83d735c9f94b8.setIcon(icon_eb5d783e65d13b47ae9c7e868f42558e);
+        
+    
+            marker_7c343e22c60a131ee1c83d735c9f94b8.bindTooltip(
+                `<div>
+                     Lycee Sacre-Coeur La salle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4212adff0152881361f822705126b4bf = L.marker(
+                [47.47063792581712, -0.5550327388458531],
+                {}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            var icon_13e5029fe4d71a6dc0ef6fa2bfb7942a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "church\n", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4212adff0152881361f822705126b4bf.setIcon(icon_13e5029fe4d71a6dc0ef6fa2bfb7942a);
+        
+    
+            marker_4212adff0152881361f822705126b4bf.bindTooltip(
+                `<div>
+                     Cathedrale Saint-Maurice
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5fc3fdfc500d10e24f840380cd94cecb = L.marker(
+                [47.47790282985124, -0.5584927885874147],
+                {}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            var icon_7931703598cc902a18c4c8ea04c825d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building-columns\n", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5fc3fdfc500d10e24f840380cd94cecb.setIcon(icon_7931703598cc902a18c4c8ea04c825d2);
+        
+    
+            marker_5fc3fdfc500d10e24f840380cd94cecb.bindTooltip(
+                `<div>
+                     Musee Jean Lurcat et de la Tapisserie Contemporaine
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d78b1f3cdd0b18a13057eaca51d1834 = L.marker(
+                [47.4699704, -0.5529915],
+                {}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            var icon_ead554ab57e970553d0c39c2b07dfe7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star\n", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3d78b1f3cdd0b18a13057eaca51d1834.setIcon(icon_ead554ab57e970553d0c39c2b07dfe7d);
+        
+    
+            marker_3d78b1f3cdd0b18a13057eaca51d1834.bindTooltip(
+                `<div>
+                     mon garage
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_90a83b2654784982af0745109ece8040 = L.polyline(
+                [[47.48854929857258, -0.5658968592137792], [47.487320906469556, -0.5660068503859494], [47.48714925971245, -0.5653078666557132], [47.48695471406947, -0.5643201515951524], [47.48661670404318, -0.5634638903423705], [47.48075008016426, -0.5642277166454379], [47.480218093593486, -0.5645089834877148], [47.4799152269116, -0.5644270376233407], [47.47878920052157, -0.565031512816141], [47.478416612657355, -0.5647017041418715]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": "0.6", "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            poly_line_90a83b2654784982af0745109ece8040.bindTooltip(
+                `<div>
+                     Chemin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b34235fea6977ff4c3499359ec073363 = L.marker(
+                [47.48854929857258, -0.5658968592137792],
+                {}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            var icon_4301e9f2eff5bfbc7b5d58ad9c55aeb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b34235fea6977ff4c3499359ec073363.setIcon(icon_4301e9f2eff5bfbc7b5d58ad9c55aeb1);
+        
+    
+            marker_b34235fea6977ff4c3499359ec073363.bindTooltip(
+                `<div>
+                     Depart
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4557aabf790d0ea5c32a76ec8c98d3bc = L.polyline(
+                [[47.48854929857258, -0.5658968592137792], [47.487320906469556, -0.5660068503859494], [47.48714925971245, -0.5653078666557132], [47.48695471406947, -0.5643201515951524], [47.48661670404318, -0.5634638903423705], [47.48075008016426, -0.5642277166454379], [47.480218093593486, -0.5645089834877148], [47.4799152269116, -0.5644270376233407], [47.47878920052157, -0.565031512816141], [47.478416612657355, -0.5647017041418715]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": "0.6", "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            poly_line_4557aabf790d0ea5c32a76ec8c98d3bc.bindTooltip(
+                `<div>
+                     Chemin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3a2f43130f10664c8415abdd57e64fa = L.marker(
+                [47.48854929857258, -0.5658968592137792],
+                {}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            var icon_63bf9ccbdfa0033062531d39123cc730 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a3a2f43130f10664c8415abdd57e64fa.setIcon(icon_63bf9ccbdfa0033062531d39123cc730);
+        
+    
+            marker_a3a2f43130f10664c8415abdd57e64fa.bindTooltip(
+                `<div>
+                     Depart
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36f33690c46805d8895379f55c131e3e = L.marker(
+                [47.472221354199554, -0.5536198036751694],
+                {}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            var icon_85674c7541dfd16f1f6569361def78c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_36f33690c46805d8895379f55c131e3e.setIcon(icon_85674c7541dfd16f1f6569361def78c3);
+        
+    
+            marker_36f33690c46805d8895379f55c131e3e.bindTooltip(
+                `<div>
+                     Destination
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c2ae8ffc6ba9d7daced51dcb83d242eb = L.polyline(
+                [[47.478416612657355, -0.5647017041418715], [47.47737167721985, -0.5657588212710473], [47.47628943185663, -0.5662781356294273], [47.475993670990675, -0.5652688687944166], [47.47595228839765, -0.5651055995363841], [47.4755908479859, -0.5637809450286199], [47.475216638472375, -0.5624055767443679], [47.47514261994806, -0.561986212936502], [47.47509778807802, -0.5617004917349451], [47.47473568311034, -0.5608382259659607], [47.474436124558565, -0.5603168422023274], [47.474120802502995, -0.5597970494121243], [47.47362074283237, -0.5590011117792156], [47.472824367746796, -0.5578268600853912], [47.47257598071542, -0.5574240495067784], [47.47232453270692, -0.557107354888246], [47.47184650401968, -0.5561443645383944], [47.471770222443894, -0.5555801123802783], [47.471632915328456, -0.5550910938432443], [47.471276932247406, -0.554383897805072], [47.471582872654494, -0.5538720089016147], [47.47197604983032, -0.5532493904222006], [47.472206118491755, -0.5536193553717684]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": "0.6", "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            poly_line_c2ae8ffc6ba9d7daced51dcb83d242eb.bindTooltip(
+                `<div>
+                     Chemin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e627622b5058e1bc7e47c0f9721c8575 = L.polyline(
+                [[47.478416612657355, -0.5647017041418715], [47.478416612657355, -0.5647017041418715]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": [5, 5], "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": "0.5", "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            poly_line_e627622b5058e1bc7e47c0f9721c8575.bindTooltip(
+                `<div>
+                     Chemin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e4cfee2e7713b6f71004b6aad6f349b6 = L.polyline(
+                [[47.472221354199554, -0.5536198036751694], [47.472206118491755, -0.5536193553717684]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": [5, 5], "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": "0.5", "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_df5683ef422be0048601b0ad41bfd458);
+        
+    
+            poly_line_e4cfee2e7713b6f71004b6aad6f349b6.bindTooltip(
+                `<div>
+                     Chemin
+                 </div>`,
+                {"sticky": true}
+            );
+ </script>
+</html>
